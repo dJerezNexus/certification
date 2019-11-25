@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s57e5118f2ca4bcfaf001c00faec8264",
+    "_top_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "dropdownimage": "listboxarw.png",
+    "focusskin": "s4df8a13d1514872b7e559ce1f9fe40d",
+    "groupcells": false,
+    "id": "ListBoxFilterOptions",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h471ebd242d24bec848808c1c8b7120f",
+    "masterdata": [
+        [
+            "1",
+            "<Select a value>"
+        ],
+        [
+            "2",
+            "On Sale"
+        ],
+        [
+            "3",
+            "Not on sale"
+        ],
+        [
+            "4",
+            "New"
+        ],
+        [
+            "5",
+            "Not new"
+        ],
+        [
+            "6",
+            "Free Shipping"
+        ],
+        [
+            "7",
+            "No Free Shipping"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "flxFilter",
+    "pf": "frmHome",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "1",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "1",
+        "<Select a value>"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

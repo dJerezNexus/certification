@@ -1,0 +1,21 @@
+{
+  "background_color": "ffffff00",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "delinkedPltfrms": {
+    "androidwear": [],
+    "desktop": [],
+    "mobile": [
+      "android",
+      "iphone"
+    ],
+    "tablet": [],
+    "watch": []
+  },
+  "isDefaultSkin": false,
+  "kuid": "s2da3188dd8b4b51b95cbf59eb044c1d",
+  "wType": "Form",
+  "winphone8": {
+    "isForked": true
+  }
+}
