@@ -108,34 +108,27 @@ define({
   //This function retrieves the previous data from cache.
 
   backButton: function(){
-
-    cache.pop();
     breadcrumbs.pop();
-    if(breadcrumbs == 0){
+    if(breadcrumbs.length < 1){
       breadcrumbs = [];
       this.view.lblBreadscrumb.text = "Home";
-
+      this.view.flxBackButton.isVisible = false;
     }
 
     this.view.segCategories.widgetDataMap = {lblCategoryName:"name"};
     this.view.segCategories.setData(cache[cache.length - 2]);
 
 
-    if(cache.length > 1){
-
+    if(cache.length >= 1){
       this.view.lblBreadscrumb.text = "Home"+" > "+ breadcrumbs.join(" > ");
       this.view.flxBackButton.isVisible = true;
-
+		cache.pop();
     }else{
 
       this.view.lblBreadscrumb.text = "Home";
       this.view.flxBackButton.isVisible = false;
     }
   },
-
-
-
-
 
   // || Searching functionality ||
 

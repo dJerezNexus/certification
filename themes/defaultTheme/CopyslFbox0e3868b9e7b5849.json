@@ -1,18 +1,18 @@
 {
   "android": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -21,18 +21,18 @@
   },
   "androidwearos": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -48,18 +48,18 @@
   "border_width": 0,
   "desktopweb": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -81,18 +81,18 @@
   },
   "ipad": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -100,41 +100,21 @@
     "font_name": "System",
     "isForked": true
   },
-  "iphone": {
-    "background_color": {
-      "angle": 180,
-      "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
-      ],
-      "cs": [
-        0,
-        45,
-        91
-      ],
-      "gradientType": "toBottom",
-      "gt": "linear"
-    },
-    "background_style": "linear",
-    "bg_type": "ms_gradient",
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -142,21 +122,21 @@
     "font_name": "None",
     "isForked": true
   },
-  "kuid": "sd568f966df14ed2bc699138e393b6ad",
+  "kuid": "sd148448153c413cb94161610e33e375",
   "spaan": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -178,18 +158,18 @@
   },
   "spaandroidtablet": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -211,18 +191,18 @@
   },
   "spabb": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -244,18 +224,18 @@
   },
   "spaip": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -277,18 +257,18 @@
   },
   "spaipad": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -310,18 +290,18 @@
   },
   "spawindowstablet": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -343,18 +323,18 @@
   },
   "spawinphone8": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -376,18 +356,18 @@
   },
   "tabrcandroid": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -401,18 +381,18 @@
   },
   "windows8": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",
@@ -422,18 +402,18 @@
   },
   "winphone8": {
     "background_color": {
-      "angle": 180,
+      "angle": 0,
       "colors": [
-        "ffffffff",
-        "b3a3ff80",
-        "b3a3ffff"
+        "0000ff",
+        "0000ff",
+        "0000ff"
       ],
       "cs": [
         0,
-        45,
-        91
+        48,
+        97
       ],
-      "gradientType": "toBottom",
+      "gradientType": "toTop",
       "gt": "linear"
     },
     "background_style": "linear",

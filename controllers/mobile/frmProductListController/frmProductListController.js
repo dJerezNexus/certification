@@ -60,9 +60,9 @@ define({
       const saleTemplate = "flxSaleProductList";
       const normalTemplate = "flxProductList";
       const fullProductList = "flxFullProductList";
-      const newItemProductList = "flxNewItemProductList";
+      const newItemProductList = "flxFullProductList";
 
-      var obj = {"mediumImage": element.image, "name":element.name, "price":"", "review":"", template: "", id:element.productId};
+      var obj = {"mediumImage": element.image, "name":element.name, "price":"", "review":"", template: "", id:element.productId, "shortDescription":element.shortDescription, "sku":element.sku};
 
       // set of conditions to determinate which template will be used based on data received
 
@@ -76,7 +76,7 @@ define({
         obj.template = newItemProductList;
       } 
       //Apply assigned template when product is both; new item and is on Sale
-      else if(element.onSale === "true" && element.new === "true"){
+      else if(element.onSale == "true" && element.new == "true"){
         obj.template = fullProductList;
       }
       else{
@@ -87,7 +87,7 @@ define({
       obj.price = price;
       //Determine if User Review Exists
       if(element.customerReviewAverage){
-        obj.review = "AvgUserRating: "+element.customerReviewAverage;
+        obj.review = "Avg User Rating: "+element.customerReviewAverage;
       }else{
         obj.review = "";
       }

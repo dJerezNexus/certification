@@ -4,8 +4,8 @@
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60%"
     },
     "_left_": {
         "type": "string",
@@ -19,7 +19,7 @@
     ],
     "_padding_": [
         0,
-        1,
+        0,
         0,
         1
     ],
@@ -38,7 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmProductDetails",
-        "platform": "android",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },

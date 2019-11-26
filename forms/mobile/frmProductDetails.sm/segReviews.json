@@ -273,7 +273,7 @@
     "showscrollbars": false,
     "swipeContext": {
         "currentPage": 0,
-        "imageWidth": 720,
+        "imageWidth": 640,
         "widthRatio": 0
     },
     "viewtype": "pageview",

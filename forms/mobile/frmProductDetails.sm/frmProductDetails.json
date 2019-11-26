@@ -15,7 +15,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sf9f1651debf456e86c718313a1a05e2",
+    "_skin_": "s60b48623a3a4350a2cf68430d1bb9be",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -44,7 +44,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS3",
+    "device": "iPhoneSE",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmProductDetails",
@@ -98,13 +98,13 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "android",
-    "prevDevice": "Pixel3",
-    "prevPlatform": "iphone",
+    "platform": "iphone",
+    "prevDevice": "iPhoneXS",
+    "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS3",
+    "shellCSS": "iOS_iPhoneSE",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
