@@ -4,7 +4,7 @@ var IdFromInitialSegData = "cat00000";
 var cache = [];
 var breadcrumbs = [];
 var categoryName = "";
-var informationToSend = [];
+var informationToSend = "";
 
 
 define({ 
@@ -67,8 +67,7 @@ define({
 
         var navigateToDetails = new kony.mvc.Navigation("frmProductList");
 
-        informationToSend.push(IdFromInitialSegData);
-        informationToSend.push(categoryName);
+        informationToSend = categoryName
         navigateToDetails.navigate(informationToSend);
 
       }else{
@@ -119,7 +118,7 @@ define({
     }
 
     this.view.segCategories.widgetDataMap = {lblCategoryName:"name"};
-    this.view.segCategories.setData(cache[cache.length - 1]);
+    this.view.segCategories.setData(cache[cache.length - 2]);
 
 
     if(cache.length > 1){

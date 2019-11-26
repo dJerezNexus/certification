@@ -6,24 +6,22 @@ var productsCurated = [];
 
 
 define({ 
-  onNavigate:function(context){
-    categoryId = context;	
+  onNavigate:function(context){	
     this.pauseNavigation();
-    kony.application.showLoadingScreen();
-    this.getProductListData();
+    //  kony.application.showLoadingScreen();
+    this.getProductListData(context);
     this.view.segProductList.onRowClick = ()=>{
       var navigation = new kony.mvc.Navigation("frmProductDetails");
-      navigation.navigate(this.view.segProductList.selectedRowItems[0].id);
+      navigation.navigate(this.view.segProductList.selectedRowItems[0]);
     };
 
     this.view.backHeaderComponent.flxBackButton.onTouchStart = ()=>{
-
+      cache.pop();
       this.backNavigation();
 
     };
 
-    cache.pop();
-    informationToSend = [];
+    //   cache.pop();
     this.segAnimation();
     this.view.lstBxPagination.onSelection = ()=>{
       page = this.view.lstBxPagination.selectedKey;
@@ -42,11 +40,11 @@ define({
 
   },
 
-  getProductListData: function(){
+  getProductListData: function(inputData){
     const serviceName = "BestBuyProductsService";
     const integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
     const operationName =  "getProductsByCategoryId";
-    var data= {"categoryId":categoryId[0], "page": page,"productAmount": "10"};
+    var data= {"categoryName":informationToSend, "page": page,"productAmount": "10"};
     const headers= {};
     integrationObj.invokeOperation(operationName, headers, data, this.operationSuccess, this.operationFailure);
 
@@ -89,14 +87,14 @@ define({
       obj.price = price;
       //Determine if User Review Exists
       if(element.customerReviewAverage){
-        obj.review = "Avg User Rating: "+element.customerReviewAverage;
+        obj.review = "AvgUserRating: "+element.customerReviewAverage;
       }else{
         obj.review = "";
       }
       productsCurated.push(obj);
     }.bind(this));
 
-    this.view.lblResults.text = "Results for: "+categoryId[1];
+    this.view.lblResults.text = "Results for: "+informationToSend;
 
     this.view.segProductList.widgetDataMap = {imgThumbnail:"mediumImage", lblProductName: "name", lblProductPrice: "price", lblProductRating:"review"};
 
