@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "42.66%"
     },
     "_left_": {
         "type": "string",
@@ -37,7 +37,6 @@
     "canUpdateUI": true,
     "children": [
         "flxNumberOfReviews",
-        "lblBlueLine",
         "flxSegReviews"
     ],
     "clipbounds": true,

@@ -26,7 +26,7 @@
     "_text_": "Add To Cart",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s8b1cebe5bcd40cbb5bf111d60461aae",
+    "focusskin": "sd3b11f1c7fd46288ff6c3a7b052030d",
     "id": "btnAddToCart",
     "info": null,
     "iscustomlayout": false,

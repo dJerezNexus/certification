@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "60.05%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -23,41 +23,48 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
+    "_skin_": "sa85d021a8bb46cda003967833dbd686",
     "_top_": {
         "type": "string",
-        "value": "40.33%"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "flxLblDescription",
-        "btnAddToCart",
-        "lblBlueLine"
+        "lblDescription"
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
     "enablescrolling": true,
-    "id": "flxProductDescription",
+    "horizontalscrollindicator": true,
+    "id": "flxLblDescription",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b83f4db9bca74e85ac6d63fe3d8d769c",
+    "kuid": "f00f0f6f54ac48b59994011e5877ee44",
     "layouttype": 4,
-    "name": "kony.ui.FlexContainer",
-    "parent": "flxProductContent",
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "flxProductDescription",
     "pf": "frmProductDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
+    "reverselayoutdirection": true,
+    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
 }

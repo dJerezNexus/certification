@@ -8,7 +8,7 @@ define({
     }else{
       this.getProductDetailData(context.id);
     }
-    this.getReviews(context.sku)
+    this.getReviews(context.sku);
     this.view.backHeaderComponent.flxBackButton.onTouchStart = ()=>{
       this.backButton();
     };
@@ -31,7 +31,12 @@ define({
     alert(errMessage);
   },
   setDataFromService:function(data){
-    this.view.lblProductName.text = data.name;
+        if(data.name.length > 60){
+      var subName = data.name.substring(0, 68);
+      this.view.lblProductName.text = subName+"...";
+    }else{
+          this.view.lblProductName.text = data.name;
+    }
     if(data.onSale == "false"){
       this.view.lblProductPrice.text ="$"+ data.regularPrice;
       this.view.lblProductPrice.skin = "";
@@ -93,13 +98,21 @@ define({
   },
   setDataFromProductList: function(data){
 
-    this.view.lblProductName.text = data.name;
+    // format product name
+    if(data.name.length > 60){
+      var subName = data.name.substring(0, 68);
+      this.view.lblProductName.text = subName+"...";
+    }else{
+          this.view.lblProductName.text = data.name;
+    }
+
+    
     this.view.lblProductPrice.text = data.price;
     this.view.lblProductPrice.skin = "";
     this.view.lblProductReviews.text = data.review;
     var review = data.review;
 
-    var singleNumber = review.substring(14, 15);
+    var singleNumber = review.substring(17, 18);
     if(singleNumber == 1){
       this.view.imgProductRating.isVisible = true;
       this.view.imgProductRating2.isVisible = false;
@@ -156,13 +169,14 @@ define({
     const operationName =  "getReviews";
     var data= {"sku": productSku};
     var  headers= {};
-    integrationObj.invokeOperation(operationName, headers, data, operationSuccess, operationFailure);
-    function operationSuccess(res){
-      alert(JSON.stringify(res))
-    }
-    function operationFailure(res){
-     alert("Failure!")
-    }
+    integrationObj.invokeOperation(operationName, headers, data, this.opSuccess, this.opFailure);
+  },
+  opSuccess: function(res){
+    this.view.segReviews.widgetDataMap = {lblReviewTitle: "title", lblAuthor:"Submitted by: "+"name", lblComment:"comment"};
+    this.view.segReviews.setData(res.reviews);
+  },
+  opFailure:function(res){
+    alert("Failure!");
   }
 
 });
