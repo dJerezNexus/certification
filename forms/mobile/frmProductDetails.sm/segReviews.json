@@ -208,7 +208,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -254,7 +254,7 @@
     "rowTemplateId": "jcb15ab2da9a443790523169fde8758b",
     "rowcounter": 9,
     "rowfocusskin": "s380efc413d449d49485dbb99878f9a2",
-    "rowskin": "sed6a237d37c4cc183f491084575854b",
+    "rowskin": "sba92d8674ee4fd28a3e1bbc6df2a748",
     "rowtemplate": "flxReviewsSeg",
     "screenlevelwidget": false,
     "seccounter": 0,
@@ -273,7 +273,7 @@
     "showscrollbars": false,
     "swipeContext": {
         "currentPage": 0,
-        "imageWidth": 1125,
+        "imageWidth": 1074,
         "widthRatio": 0
     },
     "viewtype": "pageview",
@@ -287,5 +287,5 @@
         "lblComment": "lblComment",
         "lblReviewTitle": "lblReviewTitle"
     },
-    "zindex": 1
+    "zindex": 2
 }

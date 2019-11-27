@@ -12,6 +12,8 @@ define({
     this.view.backHeaderComponent.flxBackButton.onTouchStart = ()=>{
       this.backButton();
     };
+    this.showReviewAnimation();
+    this.hideReviewAnimation();
   },
   getProductDetailData: function(productId){
     const serviceName = "BestBuyProductsService";
@@ -31,11 +33,11 @@ define({
     alert(errMessage);
   },
   setDataFromService:function(data){
-        if(data.name.length > 60){
+    if(data.name.length > 60){
       var subName = data.name.substring(0, 68);
       this.view.lblProductName.text = subName+"...";
     }else{
-          this.view.lblProductName.text = data.name;
+      this.view.lblProductName.text = data.name;
     }
     if(data.onSale == "false"){
       this.view.lblProductPrice.text ="$"+ data.regularPrice;
@@ -45,8 +47,13 @@ define({
       this.view.lblProductPrice.text ="On Sale! "+"$"+data.salePrice;
       this.view.lblProductPrice.skin = "";
     }
-
-    this.view.lblProductReviews.text = "Avg review: "+ data.customerReviewAverage;
+	if(data.customerReviewAverage.length > 0){
+      this.view.lblProductReviews.text = "Avg review: "+ data.customerReviewAverage;
+      this.view.lblProductReviews.isVisible = true;
+    }else{
+         this.view.lblProductReviews.isVisible = false;
+    }
+    
 
     // Section where the img is assigned based on users reviews
     var review = data.customerReviewAverage;
@@ -103,13 +110,21 @@ define({
       var subName = data.name.substring(0, 68);
       this.view.lblProductName.text = subName+"...";
     }else{
-          this.view.lblProductName.text = data.name;
+      this.view.lblProductName.text = data.name;
     }
 
-    
+
     this.view.lblProductPrice.text = data.price;
     this.view.lblProductPrice.skin = "";
-    this.view.lblProductReviews.text = data.review;
+    
+    if(data.review.length > 13){
+          this.view.lblProductReviews.text = data.review;
+      alert(data.review.length)
+    }else{
+      this.view.lblProductReviews.isVisible = false;
+      alert(data.review.length)
+    }
+
     var review = data.review;
 
     var singleNumber = review.substring(17, 18);
@@ -172,11 +187,93 @@ define({
     integrationObj.invokeOperation(operationName, headers, data, this.opSuccess, this.opFailure);
   },
   opSuccess: function(res){
-    this.view.segReviews.widgetDataMap = {lblReviewTitle: "title", lblAuthor:"Submitted by: "+"name", lblComment:"comment"};
-    this.view.segReviews.setData(res.reviews);
+    var response = res.reviews;
+    var submitted = "submitted by: ";
+    var reviewData = [];
+   
+    response.forEach(function(element){
+       var obj = {"title":element.title,"name":"Submitted by: "+element.name, "comment":element.comment, "rating":""};
+      var rate = element.rating;
+      var rating = rate.substring(0, 1);
+      if(rating == 1){
+        obj.rating = "ratings_star_1.png";
+      }else if(rating == 2){
+        obj.rating = "ratings_star_2.png";
+      }else if(rating == 3){
+        obj.rating = "ratings_star_3.png";
+      }else if(rating == 4){
+        obj.rating = "ratings_star_4.png";
+      }else if(rating == 5){
+        obj.rating = "rating5.png";
+      }    
+      reviewData.push(obj)
+    });
+    this.view.segReviews.widgetDataMap = {lblReviewTitle: "title", lblAuthor:"name", lblComment:"comment", imgReview:"rating"};
+    this.view.segReviews.setData(reviewData);
+    if(this.view.segReviews.data === null){
+      this.view.lblReviews.text = "Total number of reviews: 0";
+      this.view.ArrowUp.isVisible = false;
+      this.view.ArrowDown.isVisible = false;
+       this.view.segReviews.isVisible = false;
+      this.hideReviewAnimation();
+    }else{
+      this.view.lblReviews.text = "Total number of reviews: "+this.view.segReviews.data.length;
+      this.view.segReviews.isVisible = true;
+    }
+
   },
   opFailure:function(res){
     alert("Failure!");
+  },
+
+  //Animation for reviews
+  showReviewAnimation: function(){
+    var self = this;
+    this.view.ArrowUp.onTouchStart = ()=>{
+      self.view.flxProductReview.animate(
+        kony.ui.createAnimation({
+          "100": {
+            "top": "0%",
+            "stepConfig": {
+              "timingFunction": kony.anim.LINEAR
+            }
+          }
+        }), {
+          "delay": 0,
+          "iterationCount": 1,
+          "fillMode": kony.anim.FILL_MODE_FORWARDS,
+          "duration": 1
+        }, {
+          "animationEnd": function(){
+            self.view.ArrowUp.isVisible = false;
+            self.view.ArrowDown.isVisible = true;
+          }
+        });
+    };
+  }, 
+  hideReviewAnimation(){
+    var self = this;
+    this.view.ArrowDown.onTouchStart = ()=>{
+      self.view.flxProductReview.animate(
+        kony.ui.createAnimation({
+          "100": {
+            "top": "35%",
+            "stepConfig": {
+              "timingFunction": kony.anim.LINEAR
+            }
+          }
+        }), {
+          "delay": 0,
+          "iterationCount": 1,
+          "fillMode": kony.anim.FILL_MODE_FORWARDS,
+          "duration": 1
+        }, {
+          "animationEnd": function(){
+            self.view.ArrowDown.isVisible = false;
+            self.view.ArrowUp.isVisible = true;
+          }
+        });
+    };
   }
 
 });

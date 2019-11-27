@@ -6,27 +6,31 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
     "_margin_": [
-        1,
-        1,
-        1,
-        1
+        0,
+        0,
+        0,
+        0
     ],
     "_padding_": [
         0,
         0,
         0,
-        5
+        0
     ],
-    "_skin_": "s97e9f5ed43546f3925fd5dafff452ec",
-    "_text_": "",
+    "_skin_": "s5ea211583504d11a1c93d068f16a32e",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "10dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,9 +40,13 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 2,
-    "id": "lblDescription",
+    "contentalignment": 5,
+    "id": "ArrowUp",
     "info": null,
     "ipad": {
         "psp": {
@@ -50,15 +58,12 @@
             "wrapping": 2
         }
     },
-    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c6e633aa14c34302be3fb1547590b4f0",
+    "kuid": "cc8fe1ae7a7848f4ac3348ed934ca755",
+    "masterType": 1,
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
-    "parent": "flxLblDescription",
+    "parent": "flxToggleButton",
     "pf": "frmProductDetails",
-    "retaincontentalignment": false,
-    "retainflexpositionproperties": false,
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

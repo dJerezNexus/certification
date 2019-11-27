@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "42.66%"
+        "value": "39.54%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "35%"
     },
     "_width_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxNumberOfReviews",
+        "flxToggleButton",
         "flxSegReviews"
     ],
     "clipbounds": true,
@@ -47,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "a6f71bf5cf224d6ea98d39ec47ccb4ac",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxPorductDetailsContainer",
     "pf": "frmProductDetails",
@@ -58,5 +58,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 3
 }

@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "60.05%"
+        "value": "59.85%"
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
     "_top_": {
         "type": "string",
-        "value": "40.33%"
+        "value": "41.91%"
     },
     "_width_": {
         "type": "string",
@@ -38,7 +38,8 @@
     "children": [
         "flxLblDescription",
         "btnAddToCart",
-        "lblBlueLine"
+        "lblBlueLine",
+        "flxNumberOfReviews"
     ],
     "clipbounds": true,
     "containerweight": 100,

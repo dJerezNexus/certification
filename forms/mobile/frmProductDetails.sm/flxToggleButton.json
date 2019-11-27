@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "17.99%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
     "_top_": {
         "type": "string",
-        "value": "0.00%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -36,23 +36,20 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgProductRating",
-        "imgProductRating2",
-        "imgProductRating3",
-        "imgProductRating4",
-        "imgProductRating5"
+        "ArrowDown",
+        "ArrowUp"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxProductRatingImage",
+    "id": "flxToggleButton",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h6877dd370c24709994632800b049609",
+    "kuid": "c9b9254318a04e62ab8c99ebb88222f3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxProductDetail",
+    "parent": "flxProductReview",
     "pf": "frmProductDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
