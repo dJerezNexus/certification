@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "12%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "12.40%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -23,33 +23,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s22c6da935d84d48820a01ae599ec245",
+    "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
     "_top_": {
         "type": "string",
-        "value": "-0.03%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "20.44%"
+        "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgBackButton",
-        "btnBack"
+        "homeHeaderComponent",
+        "flxBackButton",
+        "flxHomeMainContainer"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxBackButton",
+    "id": "flxMain",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "cda54b71008c4f0da72ccd16eccb17a3",
+    "isvisible": true,
+    "kuid": "fe930bb0e7034cf180b5d0875a8d5cd6",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxMain",
+    "parent": "frmHome",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -57,6 +57,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 2
+    "widgetalignment": 1
 }

@@ -110,7 +110,6 @@ define({
         this.view.lstBxPagination.masterData = value;
         value.length = 0;
       }
-
       this.view.lstBxPagination.selectedKey = page;
       this.view.lblResultPagination.text = "Page "+this.view.lstBxPagination.selectedKey+" of "+totalNumberPages;
       this.view.segProductList.setData(productsCurated);
@@ -120,7 +119,6 @@ define({
       this.view.segProductList.isVisible = true;
       this.view.lstBxPagination.isVisible = true;
       this.view.lblResultPagination.isVisible = true;
-
     }
 
     else

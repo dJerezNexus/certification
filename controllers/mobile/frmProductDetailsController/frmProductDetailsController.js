@@ -205,9 +205,9 @@ define({
       }else if(rating == 4){
         obj.rating = "ratings_star_4.png";
       }else if(rating == 5){
-        obj.rating = "rating5.png";
+        obj.rating = "ratings_star_5.png";
       }    
-      reviewData.push(obj)
+      reviewData.push(obj);
     });
     this.view.segReviews.widgetDataMap = {lblReviewTitle: "title", lblAuthor:"name", lblComment:"comment", imgReview:"rating"};
     this.view.segReviews.setData(reviewData);
