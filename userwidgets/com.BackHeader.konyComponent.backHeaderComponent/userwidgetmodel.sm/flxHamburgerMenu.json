@@ -41,7 +41,8 @@
     },
     "children": [
         "imgHamburgerMenu",
-        "btnHamburgerMenu"
+        "btnHamburgerMenu",
+        "btnHamburgerMenuHIde"
     ],
     "clipbounds": true,
     "containerweight": 100,

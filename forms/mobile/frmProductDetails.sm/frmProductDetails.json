@@ -30,8 +30,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "backHeaderComponent",
-        "flxProductDetailsMainContainer"
+        "flxMain",
+        "MenuComponent"
     ],
     "containerweight": 100,
     "controllerInfo": {

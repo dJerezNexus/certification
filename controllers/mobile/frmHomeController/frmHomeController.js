@@ -226,7 +226,7 @@ define({
 
     self.view.lblCancel.onTouchStart = ()=>{
       self.view.flxSearch.isVisible = false;
-    }
+    };
   },
   setAnimation : function(){
     var transformObject1 = kony.ui.makeAffineTransform();
@@ -256,7 +256,7 @@ define({
        fillMode: kony.anim.FILL_MODE_FORWARDS,
        delay: 0},
       {"animationEnd":function(){}}
-    )
+    );
   },
   bodyAnimation: function(){
     this.view.flxMain.animate(
@@ -267,7 +267,7 @@ define({
        fillMode: kony.anim.FILL_MODE_FORWARDS,
        delay: 0},
       {"animationEnd":function(){}}
-    )
+    );
   },
 
   //Animation for menu hideout
@@ -280,7 +280,7 @@ define({
        fillMode: kony.anim.FILL_MODE_FORWARDS,
        delay: 0},
       {"animationEnd":function(){}}
-    )
+    );
   },
   bodyAnimationHide: function(){
     this.view.flxMain.animate(
@@ -291,7 +291,7 @@ define({
        fillMode: kony.anim.FILL_MODE_FORWARDS,
        delay: 0},
       {"animationEnd":function(){}}
-    )
+    );
   },
 
 

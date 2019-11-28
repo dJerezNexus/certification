@@ -5,11 +5,14 @@
     "_android_": {},
     "_androidwearos_": {},
     "_children_": [],
+    "_desktopweb_": {},
     "_height_": {
         "type": "string",
         "value": "100%"
     },
+    "_ipad_": {},
     "_iphone_": {},
+    "_kiosk_": {},
     "_left_": {
         "type": "string",
         "value": "0dp"
@@ -31,8 +34,15 @@
     "_skin_": "s54839f354554dbfbac80593d52b1227",
     "_spa_": {},
     "_spaan_": {},
+    "_spaandroidtablet_": {},
     "_spabb_": {},
     "_spaip_": {},
+    "_spaipad_": {},
+    "_spamobile_": {},
+    "_spatablet_": {},
+    "_spawindowstablet_": {},
+    "_spawinphone8_": {},
+    "_tabrcandroid_": {},
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -44,7 +54,9 @@
         "type": "string",
         "value": "100%"
     },
+    "_windows10_": {},
     "_windows8_": {},
+    "_winphone10_": {},
     "_winphone8_": {},
     "areflexpropsreferenced": false,
     "autogrowmode": 0,
@@ -72,10 +84,19 @@
         "btnHamburgerMenu": {
             "__events__": {},
             "__info__": {
+                "kuid": "ba131731021f4b419ec185769c9bf8c1",
+                "srcKUID": "g739e5bab4474722a944dc96f79722e5",
+                "wType": "Button"
+            }
+        },
+        "btnHamburgerMenuHIde": {
+            "__events__": {},
+            "__info__": {
                 "kuid": "g4229ab83b0c4b318e47fe7fc63e69b9",
                 "srcKUID": "f74216cb6e634ae18c8704fb35b9d25c",
                 "wType": "Button"
-            }
+            },
+            "isVisible": false
         },
         "flxBackButton": {
             "__events__": {},
@@ -168,7 +189,7 @@
     "layouttype": 2,
     "masterType": 0,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmProductDetails",
+    "parent": "flxMain",
     "pf": "frmProductDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

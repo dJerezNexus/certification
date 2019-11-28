@@ -15,6 +15,25 @@ define({
     this.showReviewAnimation();
     this.hideReviewAnimation();
     this.navigationToImages(context);
+    
+    
+    
+    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
+      this.menuAnimation();
+      this.bodyAnimation();
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = true;
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= false;
+    };
+    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.onClick = ()=>{
+      this.menuAnimationHide();
+      this.bodyAnimationHide();
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = false;
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= true;
+    }
+    
+    
+    
+    
   },
   getProductDetailData: function(productId){
     const serviceName = "BestBuyProductsService";
@@ -120,10 +139,10 @@ define({
 
     if(data.review.length > 13){
       this.view.lblProductReviews.text = data.review;
-      alert(data.review.length)
+     // alert(data.review.length)
     }else{
       this.view.lblProductReviews.isVisible = false;
-      alert(data.review.length)
+    //  alert(data.review.length)
     }
 
     var review = data.review;
@@ -232,10 +251,11 @@ define({
     this.view.btnMore.onTouchStart = ()=>{
       var navigation = new kony.mvc.Navigation("frmProductImages");
       navigation.navigate(dataId);
-    }
+    };
 
   },
-
+//  || Animation section ||
+  
   //Animation for reviews
   showReviewAnimation: function(){
     var self = this;
@@ -284,6 +304,53 @@ define({
           }
         });
     };
+  },
+  //Animation for menu showup
+  menuAnimation: function(){
+    this.view.MenuComponent.flxMenuContainer.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+  bodyAnimation: function(){
+    this.view.flxMain.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"80%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+
+  //Animation for menu hideout
+  menuAnimationHide: function(){
+    this.view.MenuComponent.flxMenuContainer.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+  bodyAnimationHide: function(){
+    this.view.flxMain.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
   }
 
 });

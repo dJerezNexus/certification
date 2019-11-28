@@ -30,8 +30,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "backHeaderComponent",
-        "flxMainContainer"
+        "flxMain",
+        "MenuComponent"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -99,7 +99,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhoneXS",
+    "prevDevice": "Pixel3",
     "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

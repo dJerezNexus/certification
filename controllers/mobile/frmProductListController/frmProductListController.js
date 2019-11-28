@@ -21,7 +21,6 @@ define({
 
     };
 
-    //   cache.pop();
     this.segAnimation();
     this.view.lstBxPagination.onSelection = ()=>{
       page = this.view.lstBxPagination.selectedKey;
@@ -29,6 +28,20 @@ define({
     };
     this.resumeNavigation();
 
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
+      this.menuAnimation();
+      this.bodyAnimation();
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = true;
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= false;
+    };
+    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.onClick = ()=>{
+      this.menuAnimationHide();
+      this.bodyAnimationHide();
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = false;
+      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= true;
+    };
+    
+    
   },
 
   backNavigation: function(){
@@ -155,6 +168,53 @@ define({
     var animationCallbacks = {"animationEnd":function(){kony.print("animation END");}};
     var animationDefObject={definition:animationObject,config:animationConfig,callbacks:animationCallbacks};
     this.view.segProductList.setAnimations({visible:animationDefObject});
+  },
+    //Animation for menu showup
+  menuAnimation: function(){
+    this.view.MenuComponent.flxMenuContainer.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+  bodyAnimation: function(){
+    this.view.flxMain.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"80%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+
+  //Animation for menu hideout
+  menuAnimationHide: function(){
+    this.view.MenuComponent.flxMenuContainer.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
+  },
+  bodyAnimationHide: function(){
+    this.view.flxMain.animate(
+      kony.ui.createAnimation({
+        "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+      }),
+      {duration:1,
+       fillMode: kony.anim.FILL_MODE_FORWARDS,
+       delay: 0},
+      {"animationEnd":function(){}}
+    );
   }
 
 });

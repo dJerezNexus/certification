@@ -65,10 +65,19 @@
         "btnHamburgerMenu": {
             "__events__": {},
             "__info__": {
+                "kuid": "f9da379e79de44268121268cdc865090",
+                "srcKUID": "g739e5bab4474722a944dc96f79722e5",
+                "wType": "Button"
+            }
+        },
+        "btnHamburgerMenuHIde": {
+            "__events__": {},
+            "__info__": {
                 "kuid": "b2b45b682eb64b55b801e6606bfc6456",
                 "srcKUID": "f74216cb6e634ae18c8704fb35b9d25c",
                 "wType": "Button"
-            }
+            },
+            "isVisible": false
         },
         "flxBackButton": {
             "__events__": {},
@@ -161,7 +170,7 @@
     "layouttype": 2,
     "masterType": 0,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmProductImages",
+    "parent": "flxMain",
     "pf": "frmProductImages",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
