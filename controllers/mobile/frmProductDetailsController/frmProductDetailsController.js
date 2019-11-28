@@ -14,6 +14,7 @@ define({
     };
     this.showReviewAnimation();
     this.hideReviewAnimation();
+    this.navigationToImages(context);
   },
   getProductDetailData: function(productId){
     const serviceName = "BestBuyProductsService";
@@ -47,13 +48,13 @@ define({
       this.view.lblProductPrice.text ="On Sale! "+"$"+data.salePrice;
       this.view.lblProductPrice.skin = "";
     }
-	if(data.customerReviewAverage.length > 0){
+    if(data.customerReviewAverage.length > 0){
       this.view.lblProductReviews.text = "Avg review: "+ data.customerReviewAverage;
       this.view.lblProductReviews.isVisible = true;
     }else{
-         this.view.lblProductReviews.isVisible = false;
+      this.view.lblProductReviews.isVisible = false;
     }
-    
+
 
     // Section where the img is assigned based on users reviews
     var review = data.customerReviewAverage;
@@ -116,9 +117,9 @@ define({
 
     this.view.lblProductPrice.text = data.price;
     this.view.lblProductPrice.skin = "";
-    
+
     if(data.review.length > 13){
-          this.view.lblProductReviews.text = data.review;
+      this.view.lblProductReviews.text = data.review;
       alert(data.review.length)
     }else{
       this.view.lblProductReviews.isVisible = false;
@@ -190,9 +191,9 @@ define({
     var response = res.reviews;
     var submitted = "submitted by: ";
     var reviewData = [];
-   
+
     response.forEach(function(element){
-       var obj = {"title":element.title,"name":"Submitted by: "+element.name, "comment":element.comment, "rating":""};
+      var obj = {"title":element.title,"name":"Submitted by: "+element.name, "comment":element.comment, "rating":""};
       var rate = element.rating;
       var rating = rate.substring(0, 1);
       if(rating == 1){
@@ -214,7 +215,7 @@ define({
       this.view.lblReviews.text = "Total number of reviews: 0";
       this.view.ArrowUp.isVisible = false;
       this.view.ArrowDown.isVisible = false;
-       this.view.segReviews.isVisible = false;
+      this.view.segReviews.isVisible = false;
       this.hideReviewAnimation();
     }else{
       this.view.lblReviews.text = "Total number of reviews: "+this.view.segReviews.data.length;
@@ -224,6 +225,15 @@ define({
   },
   opFailure:function(res){
     alert("Failure!");
+  },
+
+  // Navigation where all different images will be displayed
+  navigationToImages: function(dataId){
+    this.view.btnMore.onTouchStart = ()=>{
+      var navigation = new kony.mvc.Navigation("frmProductImages");
+      navigation.navigate(dataId);
+    }
+
   },
 
   //Animation for reviews

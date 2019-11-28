@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s57e5118f2ca4bcfaf001c00faec8264",
+    "_top_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "dropdownimage": "listboxarw.png",
+    "focusskin": "s4df8a13d1514872b7e559ce1f9fe40d",
+    "groupcells": false,
+    "id": "lsbxImageOptions",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b6be2ab380874d839703d5fd05084858",
+    "masterdata": [
+        [
+            "main",
+            "main"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "flxMainContainer",
+    "pf": "frmProductImages",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "main",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "main",
+        "main"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

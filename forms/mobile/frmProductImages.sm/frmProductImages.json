@@ -15,7 +15,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s6d178376287471d8a59eaa3dbeaf908",
+    "_skin_": "sf9f1651debf456e86c718313a1a05e2",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -31,23 +31,23 @@
     "canUpdateUI": true,
     "children": [
         "backHeaderComponent",
-        "flxProductListMainContainer"
+        "flxMainContainer"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmProductListController"
+            "name": "frmProductImagesController"
         }
     },
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "Pixel3",
+    "device": "iPhoneSE",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmProductList",
+    "id": "frmProductImages",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -65,7 +65,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "abef33536dc942df80b3a4ad54596d6f",
+                "kuid": "h8e9a347bd614117a6505a324d21244e",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -76,7 +76,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "a513bb4b1d89472588b66e0e7146b12b",
+                        "kuid": "hc08a17f62c94b0686d83c837155f344",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -93,18 +93,18 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "d4c31e42055a421fb47b67402d216921",
+    "kuid": "jbdd7463096c4869bd3691a84f213db8",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "android",
-    "prevDevice": "iPhoneSE",
-    "prevPlatform": "iphone",
+    "platform": "iphone",
+    "prevDevice": "iPhoneXS",
+    "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_Pixel3",
+    "shellCSS": "iOS_iPhoneSE",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
