@@ -28,20 +28,15 @@ define({
     };
     this.resumeNavigation();
 
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
+    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
       this.menuAnimation();
       this.bodyAnimation();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = true;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= false;
+
     };
-    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.onClick = ()=>{
-      this.menuAnimationHide();
-      this.bodyAnimationHide();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = false;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= true;
-    };
-    
-    
+    this.view.flxMain.left = "0%";  
+    this.view.MenuComponent.left = "-85%";
+
+
   },
 
   backNavigation: function(){
@@ -73,9 +68,9 @@ define({
       const saleTemplate = "flxSaleProductList";
       const normalTemplate = "flxProductList";
       const fullProductList = "flxFullProductList";
-      const newItemProductList = "flxFullProductList";
+      const newItemProductList = "flxNewItemProductList";
 
-      var obj = {"mediumImage": element.image, "name":element.name, "price":"", "review":"", template: "", id:element.productId, "shortDescription":element.shortDescription, "sku":element.sku};
+      var obj = {"mediumImage": element.image, "name":element.name, "price":"", "review":"", template: "", id:element.productId, "shortDescription":element.shortDescription, "sku":element.sku, "sale":"", "new":""};
 
       // set of conditions to determinate which template will be used based on data received
 
@@ -83,18 +78,24 @@ define({
       if(element.onSale === "true"){
         price = "$"+element.salePrice;
         obj.template = saleTemplate;
+        obj.sale = "true"
+
       } 
       //Apply assigned template when the product is a new Item.
       else if(element.new === "true"){
         obj.template = newItemProductList;
+        price = "$"+element.regularPrice;
+        obj.new = "true";
       } 
       //Apply assigned template when product is both; new item and is on Sale
       else if(element.onSale == "true" && element.new == "true"){
         obj.template = fullProductList;
+        price = "$"+element.salePrice;
       }
       else{
         price = "$"+element.regularPrice;
         obj.template = normalTemplate;
+        obj.sale = "false"
       }
       //Add price to data array based on how it was recieved
       obj.price = price;
@@ -169,9 +170,9 @@ define({
     var animationDefObject={definition:animationObject,config:animationConfig,callbacks:animationCallbacks};
     this.view.segProductList.setAnimations({visible:animationDefObject});
   },
-    //Animation for menu showup
+  //Animation for menu showup
   menuAnimation: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
@@ -195,9 +196,9 @@ define({
 
   //Animation for menu hideout
   menuAnimationHide: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
-        "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+        "100":{"left":"-80%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
       {duration:1,
        fillMode: kony.anim.FILL_MODE_FORWARDS,

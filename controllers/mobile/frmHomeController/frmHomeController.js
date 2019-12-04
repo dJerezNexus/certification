@@ -5,14 +5,15 @@ var cache = [];
 var breadcrumbs = [];
 var categoryName = "";
 var informationToSend = "";
+var cartItems = [];
 
 
 define({ 
   onNavigate:function(){
 
     this.pauseNavigation();
-
     this.getCategories();
+        	
 
     this.view.segCategories.onRowClick =()=>{
       this.getdataSubCategories();
@@ -32,23 +33,17 @@ define({
     this.view.inputSearch.onDone = ()=>{
       this.searchFunction();
     };
-
+ this.view.flxMain.left = "0%";  
+    this.view.MenuComponent.left = "-85%";
     this.setAnimation();
+
+
 
     this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
       this.menuAnimation();
       this.bodyAnimation();
-      this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerHIde.isVisible = true;
-      this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible = false;
-
     };
-    this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerHIde.onClick = ()=>{
-      this.menuAnimationHide();
-      this.bodyAnimationHide();
-      this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible = true;
-      this.view.homeHeaderComponent.flxHamburgerMenu.btnHamburgerHIde.isVisible = false;
 
-    }
   },
 
   /*Definition of functionalities*/
@@ -93,7 +88,7 @@ define({
           this.view.lblBreadscrumb.text = "Home";
           this.view.flxBackButton.isVisible = false;
         }else{
-          this.view.lblBreadscrumb.text = "Home"+">"+ breadcrumbs.join(">");
+          this.view.lblBreadscrumb.text = "Home"+"->"+ breadcrumbs.join("->");
           this.view.flxBackButton.isVisible = true;
         }
       }
@@ -134,7 +129,7 @@ define({
 
 
     if(cache.length >= 1){
-      this.view.lblBreadscrumb.text = "Home"+" > "+ breadcrumbs.join(" > ");
+      this.view.lblBreadscrumb.text = "Home"+" -> "+ breadcrumbs.join(" -> ");
       this.view.flxBackButton.isVisible = true;
       cache.pop();
     }else{
@@ -248,7 +243,7 @@ define({
   },
   //Animation for menu showup
   menuAnimation: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
@@ -261,7 +256,7 @@ define({
   bodyAnimation: function(){
     this.view.flxMain.animate(
       kony.ui.createAnimation({
-        "100":{"left":"85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
+        "100":{"left":"80%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
       {duration:1,
        fillMode: kony.anim.FILL_MODE_FORWARDS,
@@ -272,7 +267,7 @@ define({
 
   //Animation for menu hideout
   menuAnimationHide: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
@@ -292,7 +287,7 @@ define({
        delay: 0},
       {"animationEnd":function(){}}
     );
-  },
+  }
 
 
 });

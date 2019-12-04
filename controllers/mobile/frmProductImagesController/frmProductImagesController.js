@@ -4,31 +4,26 @@ define({
   onNavigate: function(context){
     this.navigatePreviousFrom(context);
     this.getImages(context.id);
-       this.view.lsbxImageOptions.onSelection = ()=>{
+    this.view.lsbxImageOptions.onSelection = ()=>{
       var imgSource = this.view.lsbxImageOptions.selectedKey;
-         this.view.imgProduct.src = imgSource;
+      this.view.imgProduct.src = imgSource;
     };
     this.view.imgProduct.src = context.mediumImage;
-    
+
     this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
       this.menuAnimation();
       this.bodyAnimation();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = true;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= false;
+
     };
-    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.onClick = ()=>{
-      this.menuAnimationHide();
-      this.bodyAnimationHide();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = false;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= true;
-    };
+    this.view.flxMain.left = "0%";  
+    this.view.MenuComponent.left = "-85%";
   },
   navigatePreviousFrom: function(context){
     this.view.backHeaderComponent.flxBackButton.onTouchStart = ()=>{
       var navigation = new kony.mvc.Navigation("frmProductDetails");
       navigation.navigate(context);
     };
- 
+
   },
   getImages: function(id){
     const serviceName = "BestBuyProductsService";
@@ -54,11 +49,11 @@ define({
   operationFailure:function(res){
     alert("Failure");
   },
-  
+
   // || Animations section ||
-      //Animation for menu showup
+  //Animation for menu showup
   menuAnimation: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
@@ -82,7 +77,7 @@ define({
 
   //Animation for menu hideout
   menuAnimationHide: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),

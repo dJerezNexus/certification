@@ -1,0 +1,182 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_iphone_": {},
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s54839f354554dbfbac80593d52b1227",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_vizProps_": {
+        "hidewidgethierarchy": false
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "btnHamburgerHIde": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jd54fef20e8d42fbb81b114ad493e1a7",
+                "srcKUID": "ba39ce71d1474d6ba61510b5f193ff96",
+                "wType": "Button"
+            },
+            "isVisible": false
+        },
+        "btnHamburgerMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d682c45326374317aafc4d46bcb8b521",
+                "srcKUID": "bb0f4e1b39fb4e98a6e16f00756862b4",
+                "wType": "Button"
+            }
+        },
+        "btnSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a7db4c81929d4c47ad67fde7ada115e7",
+                "srcKUID": "bcd21be1d9d648248436fd1e17b6d153",
+                "wType": "Button"
+            }
+        },
+        "flxHamburgerMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cbfc1c65f9084655bc81a20313fca458",
+                "srcKUID": "fc75b70a8e314b0faa988b29683a2517",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h85c70139a2f4d1cb40e73f7cf69b878",
+                "srcKUID": "f16c5fdf731e4dc299e5178694b016b2",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHeaderMainContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f22f59b31e5b4bcab93dd4f91e26336f",
+                "srcKUID": "i18c6875565740a393dc5d496e8f841d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLogo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f1a3eb72eff74518a54cb805ef46e15d",
+                "srcKUID": "h09ca6fbfa7349b984aef8fcebea7731",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dfa1ea355c3842eea9dc86722a1484bf",
+                "srcKUID": "j7ca738282e64004afe9d9f1722abb85",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a1ed890d933e40e29f236e8a529db0d6",
+                "srcKUID": "ca5f33473aaa4129a93eeaa26838bcb4",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false
+        },
+        "homeHeaderComponent": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "jb4f1d28d77541c5b9d3ee0f436d1a3b",
+                "srcKUID": "af06b5a7c83c4afc86361ce65aa4c1f7",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgHamburgerMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e5ea4e76635045229fbd9d3750f14799",
+                "srcKUID": "g3fd4a7cd2304966a3770f3185a888f7",
+                "wType": "Image"
+            }
+        },
+        "imgLogo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eb34840e3b3f4a79ba4a7b082a342307",
+                "srcKUID": "b54ce68962f34d3183a962aeab4c0dee",
+                "wType": "Image"
+            }
+        },
+        "imgSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dbd1c8d16118488ba2536c4302b2ca40",
+                "srcKUID": "f6a34bb55a084a51a7768860d505f8ec",
+                "wType": "Image"
+            }
+        },
+        "lblBlueLine": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c88908dd82bb4aab8ed18aa7f86dd92b",
+                "srcKUID": "ebbae05fe9e3451d9ba4c5abc1ee8a53",
+                "wType": "Label"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "homeHeaderComponent",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "jb4f1d28d77541c5b9d3ee0f436d1a3b",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMain",
+    "pf": "frmCart",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "af06b5a7c83c4afc86361ce65aa4c1f7",
+    "wType": "UserWidgetInstance"
+}

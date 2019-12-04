@@ -1,6 +1,8 @@
+
 define({ 
 
   onNavigate:function(context){
+    this.addItemToCart(context);
     if(context.id === ""){
 
       this.setDataFromProductList(context);
@@ -15,25 +17,15 @@ define({
     this.showReviewAnimation();
     this.hideReviewAnimation();
     this.navigationToImages(context);
-    
-    
-    
+
+
     this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.onClick = ()=>{
       this.menuAnimation();
       this.bodyAnimation();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = true;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= false;
     };
-    this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.onClick = ()=>{
-      this.menuAnimationHide();
-      this.bodyAnimationHide();
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenuHIde.isVisible = false;
-      this.view.backHeaderComponent.flxHamburgerMenu.btnHamburgerMenu.isVisible= true;
-    }
-    
-    
-    
-    
+    this.view.flxMain.left = "0%";  
+    this.view.MenuComponent.left = "-85%";
+
   },
   getProductDetailData: function(productId){
     const serviceName = "BestBuyProductsService";
@@ -139,10 +131,10 @@ define({
 
     if(data.review.length > 13){
       this.view.lblProductReviews.text = data.review;
-     // alert(data.review.length)
+      // alert(data.review.length)
     }else{
       this.view.lblProductReviews.isVisible = false;
-    //  alert(data.review.length)
+      //  alert(data.review.length)
     }
 
     var review = data.review;
@@ -230,6 +222,7 @@ define({
     });
     this.view.segReviews.widgetDataMap = {lblReviewTitle: "title", lblAuthor:"name", lblComment:"comment", imgReview:"rating"};
     this.view.segReviews.setData(reviewData);
+
     if(this.view.segReviews.data === null){
       this.view.lblReviews.text = "Total number of reviews: 0";
       this.view.ArrowUp.isVisible = false;
@@ -254,8 +247,16 @@ define({
     };
 
   },
-//  || Animation section ||
-  
+
+  addItemToCart: function(productData){
+    this.view.btnAddToCart.onClick = ()=>{
+      alert("Item added to cart");
+      cartItems.push(productData);
+    }
+
+  },
+  //  || Animation section ||
+
   //Animation for reviews
   showReviewAnimation: function(){
     var self = this;
@@ -307,7 +308,7 @@ define({
   },
   //Animation for menu showup
   menuAnimation: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"0%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),
@@ -331,7 +332,7 @@ define({
 
   //Animation for menu hideout
   menuAnimationHide: function(){
-    this.view.MenuComponent.flxMenuContainer.animate(
+    this.view.MenuComponent.animate(
       kony.ui.createAnimation({
         "100":{"left":"-85%", "stepConfig":{"timingFunction": kony.anim.LINEAR}}
       }),

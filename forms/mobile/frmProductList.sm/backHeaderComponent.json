@@ -6,7 +6,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "12%"
     },
     "_iphone_": {},
     "_left_": {
@@ -56,6 +56,15 @@
                 "kuid": "d86892f8322047049aca9d578d796a5c",
                 "srcKUID": "e116ee034e9e45a78c549587d2857a20",
                 "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "12%"
+                }
             }
         },
         "btnBack": {
@@ -105,6 +114,15 @@
                 "kuid": "f114ef9ee0354aba9691e063571918e2",
                 "srcKUID": "i44fec43ee844b2fb7b31e915ee4fb88",
                 "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
             }
         },
         "flxHeaderMainContainer": {
@@ -129,6 +147,15 @@
                 "kuid": "f3202eb0207f42a7951aeb39dcf4b4b3",
                 "srcKUID": "cc7caa4e15694059ab2bfce85651680b",
                 "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
             }
         },
         "imgBackButton": {

@@ -1,0 +1,229 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_android_": {},
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_iphone_": {},
+    "_left_": {
+        "type": "string",
+        "value": "-80%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf3c80b5cf434a6f8622f7df122ad6bb",
+    "_spa_": {},
+    "_spaan_": {},
+    "_spabb_": {},
+    "_spaip_": {},
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_vizProps_": {
+        "hidewidgethierarchy": false
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "MenuComponent": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "a176cf0df4004b5dbbc19dd9a9693eb6",
+                "srcKUID": "i85e7fdef9b445b88bcb83004354a373",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "-80%"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80%"
+                }
+            }
+        },
+        "divider": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h8024e0f90be435ba2df5981bc395d80",
+                "srcKUID": "b2f0db069c034f288df2c7b4250fcfe3",
+                "wType": "Label"
+            }
+        },
+        "flxCart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "de65ca847f544fc8bdfa1997b81eac7d",
+                "srcKUID": "fa535e71299b439cafd1f8c191c86633",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCartItems": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i1f8b714ee694778b2650df2335b7098",
+                "srcKUID": "e47be0d5a6dd4c77a41219aa58d3bb66",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc3d285a94484c289e7632c4663d36a7",
+                "srcKUID": "a41bc3795fd847b2bc744700f8fdf8b4",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxItemsHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f4575165fa1c4c1bb2034be2b2aafc1b",
+                "srcKUID": "he04fbf94993497790c1fb0c23082d3e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxMenuContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d4eb2ee6ca0c47d59f88ef371ae4130b",
+                "srcKUID": "d1bcee3b296e45acadeec65b2478a9e6",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxMenuOptions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c1285e5c71bd47f49c59d0f7ea02f6c5",
+                "srcKUID": "b508c65421f748378fb67c1465ffb8c8",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxStores": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h0140a23e8ad49188fc2ee6110f42ac5",
+                "srcKUID": "e80f867f67bd417ca4ce5130fa9becf0",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxStoresItems": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e33280e109e04572876c528620c01235",
+                "srcKUID": "i1cf349b80f747d9a333f74247ab15c3",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgCart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a3834ae1d71e4238b149ff3bf740e94f",
+                "srcKUID": "eb230ad79f754616b860eddf193e75ae",
+                "wType": "Image"
+            }
+        },
+        "imgIconHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c9799cefe0d44129a63f6c79709dc35d",
+                "srcKUID": "e5a0e9e8fc3c48d18ec8f25bda364c0e",
+                "wType": "Image"
+            }
+        },
+        "imgStore": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab737b93d5f343c18eba7a9fde6c7f9e",
+                "srcKUID": "he64d194ee194be9aab51fffc793f990",
+                "wType": "Image"
+            }
+        },
+        "lblCart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f82c99da634249acabd1e1e9caaa56b3",
+                "srcKUID": "g8835ce514194ff49af66b76ea1524c1",
+                "wType": "Label"
+            }
+        },
+        "lblHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c55aa3dc67e6491ab295fca4756d80b1",
+                "srcKUID": "b102a3c3a614429b9f7b4cebdbd0952d",
+                "wType": "Label"
+            }
+        },
+        "lblStores": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g9415b4b9f6c46498c50b3f30a77ae83",
+                "srcKUID": "i15166ce2c1d498388a7e142c1c3c71a",
+                "wType": "Label"
+            }
+        },
+        "lblUnderline": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h4ce90749b70415b88c5d2afc9e678d5",
+                "srcKUID": "fd592ff5d1ea40fdb32d07c0ca120c60",
+                "wType": "Label"
+            }
+        },
+        "underline": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c5f4a2804ae148de8281ee6f99ddb883",
+                "srcKUID": "ec12384de11d4bc5b77298a8cf9d6e70",
+                "wType": "Label"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "MenuComponent",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "a176cf0df4004b5dbbc19dd9a9693eb6",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmCart",
+    "pf": "frmCart",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "i85e7fdef9b445b88bcb83004354a373",
+    "wType": "UserWidgetInstance"
+}

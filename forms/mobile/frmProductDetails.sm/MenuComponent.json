@@ -11,7 +11,7 @@
     "_iphone_": {},
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "-80%"
     },
     "_margin_": [
         0,
@@ -41,7 +41,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "80%"
     },
     "areflexpropsreferenced": false,
     "autogrowmode": 0,
@@ -53,62 +53,8 @@
             "__events__": {},
             "__info__": {
                 "isRoot": true,
-                "kuid": "c55e0bfd98034c14be382444305bc3b5",
+                "kuid": "adcd9b75f01346f7992052210ba8209e",
                 "srcKUID": "i85e7fdef9b445b88bcb83004354a373",
-                "wType": "FlexContainer"
-            },
-            "left": {
-                "Default": {
-                    "type": "string",
-                    "value": "0%"
-                }
-            }
-        },
-        "divider": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "cebeb16cb3b742b080c30c2b521a9de8",
-                "srcKUID": "b2f0db069c034f288df2c7b4250fcfe3",
-                "wType": "Label"
-            }
-        },
-        "flxCart": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "c5d55741c4724ea2887b5918110fb4fa",
-                "srcKUID": "fa535e71299b439cafd1f8c191c86633",
-                "wType": "FlexContainer"
-            }
-        },
-        "flxCartItems": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "a3d473d350fe4afbb4839a395643b01c",
-                "srcKUID": "e47be0d5a6dd4c77a41219aa58d3bb66",
-                "wType": "FlexContainer"
-            }
-        },
-        "flxHome": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "e60c9b1ca5b0467c9a14980820694d8e",
-                "srcKUID": "a41bc3795fd847b2bc744700f8fdf8b4",
-                "wType": "FlexContainer"
-            }
-        },
-        "flxItemsHome": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "ae069921d5954955a1f93ee9b16fe494",
-                "srcKUID": "he04fbf94993497790c1fb0c23082d3e",
-                "wType": "FlexContainer"
-            }
-        },
-        "flxMenuContainer": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "e1e9bf7fbcd2409c80bc94c81954f1f0",
-                "srcKUID": "d1bcee3b296e45acadeec65b2478a9e6",
                 "wType": "FlexContainer"
             },
             "left": {
@@ -124,10 +70,58 @@
                 }
             }
         },
+        "divider": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ef2405dd747641a097c8cd75433dc10d",
+                "srcKUID": "b2f0db069c034f288df2c7b4250fcfe3",
+                "wType": "Label"
+            }
+        },
+        "flxCart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ae3b412780d244a5b30e41f7242396e1",
+                "srcKUID": "fa535e71299b439cafd1f8c191c86633",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCartItems": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h7f409782b604c2ebfaeaaad69cf49c0",
+                "srcKUID": "e47be0d5a6dd4c77a41219aa58d3bb66",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c13ec5a2789c433290e0b6069b515743",
+                "srcKUID": "a41bc3795fd847b2bc744700f8fdf8b4",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxItemsHome": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc594ea608854a2ba90f638e1ef2fffa",
+                "srcKUID": "he04fbf94993497790c1fb0c23082d3e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxMenuContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eda92d08ae514de0aefe1e6da5a2c9ec",
+                "srcKUID": "d1bcee3b296e45acadeec65b2478a9e6",
+                "wType": "FlexContainer"
+            }
+        },
         "flxMenuOptions": {
             "__events__": {},
             "__info__": {
-                "kuid": "f96bca6b996a48dab65fd55cfc9ae9bb",
+                "kuid": "f2a5714dd13948b98b66bc6e58f672fc",
                 "srcKUID": "b508c65421f748378fb67c1465ffb8c8",
                 "wType": "FlexContainer"
             }
@@ -135,7 +129,7 @@
         "flxStores": {
             "__events__": {},
             "__info__": {
-                "kuid": "dcbc646c61c349a4924c3ae0bb26c925",
+                "kuid": "d98d9ac22ef44b5fad7222f41f1a0914",
                 "srcKUID": "e80f867f67bd417ca4ce5130fa9becf0",
                 "wType": "FlexContainer"
             }
@@ -143,7 +137,7 @@
         "flxStoresItems": {
             "__events__": {},
             "__info__": {
-                "kuid": "i7af033e40244e688bb46e4864c31102",
+                "kuid": "b29948b52cb84ec7aa75f5b80c75f42a",
                 "srcKUID": "i1cf349b80f747d9a333f74247ab15c3",
                 "wType": "FlexContainer"
             }
@@ -151,7 +145,7 @@
         "imgCart": {
             "__events__": {},
             "__info__": {
-                "kuid": "d3b9021c164749449912bf0f4a01da46",
+                "kuid": "b276f931cab147cc9458ff9b117ca974",
                 "srcKUID": "eb230ad79f754616b860eddf193e75ae",
                 "wType": "Image"
             }
@@ -159,7 +153,7 @@
         "imgIconHome": {
             "__events__": {},
             "__info__": {
-                "kuid": "ife21478f2974207a990b0d991816a61",
+                "kuid": "e875461d535a44fb91f3a4a7c00bbef5",
                 "srcKUID": "e5a0e9e8fc3c48d18ec8f25bda364c0e",
                 "wType": "Image"
             }
@@ -167,7 +161,7 @@
         "imgStore": {
             "__events__": {},
             "__info__": {
-                "kuid": "a194e3448636405c9839248890794f82",
+                "kuid": "g7106d2699d442caa4e52ff57a23bbf8",
                 "srcKUID": "he64d194ee194be9aab51fffc793f990",
                 "wType": "Image"
             }
@@ -175,7 +169,7 @@
         "lblCart": {
             "__events__": {},
             "__info__": {
-                "kuid": "e3a1282253704aefb6a2f4d9694322f2",
+                "kuid": "fe96102239604a7bb0020483e63353e3",
                 "srcKUID": "g8835ce514194ff49af66b76ea1524c1",
                 "wType": "Label"
             }
@@ -183,7 +177,7 @@
         "lblHome": {
             "__events__": {},
             "__info__": {
-                "kuid": "j4adc9958b304dceb4599a3c4f0fcf6e",
+                "kuid": "cee0c5b46cb24771bd10432bdbdba1b8",
                 "srcKUID": "b102a3c3a614429b9f7b4cebdbd0952d",
                 "wType": "Label"
             }
@@ -191,7 +185,7 @@
         "lblStores": {
             "__events__": {},
             "__info__": {
-                "kuid": "ifd2900b33f3420f81c7f0a50189c09e",
+                "kuid": "g4a13494ed594869a7efbe6bf1cf3695",
                 "srcKUID": "i15166ce2c1d498388a7e142c1c3c71a",
                 "wType": "Label"
             }
@@ -199,7 +193,7 @@
         "lblUnderline": {
             "__events__": {},
             "__info__": {
-                "kuid": "j7af131d74a0450f8f96fbf633d1ff57",
+                "kuid": "b2efe58b989242d9ae1c176ee819ef75",
                 "srcKUID": "fd592ff5d1ea40fdb32d07c0ca120c60",
                 "wType": "Label"
             }
@@ -207,7 +201,7 @@
         "underline": {
             "__events__": {},
             "__info__": {
-                "kuid": "b21d7b9c7da04944a1eee317acb5fc07",
+                "kuid": "ff728fa66a2942afa00b5ceb925d2283",
                 "srcKUID": "ec12384de11d4bc5b77298a8cf9d6e70",
                 "wType": "Label"
             }
@@ -219,7 +213,7 @@
     "iscustomlayout": false,
     "isdatareferenced": false,
     "isvisible": true,
-    "kuid": "c55e0bfd98034c14be382444305bc3b5",
+    "kuid": "adcd9b75f01346f7992052210ba8209e",
     "layouttype": 2,
     "masterType": 0,
     "name": "kony.ui.UserWidgetInstance",

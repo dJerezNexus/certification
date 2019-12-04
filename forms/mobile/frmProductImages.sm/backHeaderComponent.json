@@ -6,7 +6,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "12%"
     },
     "_iphone_": {},
     "_left_": {
@@ -28,6 +28,10 @@
     ],
     "_percent_": true,
     "_skin_": "s54839f354554dbfbac80593d52b1227",
+    "_spa_": {},
+    "_spaan_": {},
+    "_spabb_": {},
+    "_spaip_": {},
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -52,6 +56,15 @@
                 "kuid": "ac2a713ef9dd4873bce18e13277ddfdb",
                 "srcKUID": "e116ee034e9e45a78c549587d2857a20",
                 "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "12%"
+                }
             }
         },
         "btnBack": {
@@ -101,6 +114,15 @@
                 "kuid": "gd3e36224ab946cab27b8b34240ea5ba",
                 "srcKUID": "i44fec43ee844b2fb7b31e915ee4fb88",
                 "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
             }
         },
         "flxHeaderMainContainer": {
